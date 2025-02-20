@@ -1,6 +1,8 @@
-# Projeto de teste automatizados de Front End
+# Projeto de testes automatizados para Narwal
 
 ## Descrição
+
+- Teste Back-End
 
 Este é um projeto simples que contém dois testes automatizados realizados no site da Narwal Sistemas, utilizando o Cypress:
 
@@ -22,4 +24,4 @@ Eu escolhi o framework Cypress pois é o framework que possuo mais facilidade e 
 
 ## Contato
 
-- Caso necessite de ajudar, entrar em contato com Marcela Morales
+- Qualquer duvida ou sugestão, entrar em contato com Marcela Morales
