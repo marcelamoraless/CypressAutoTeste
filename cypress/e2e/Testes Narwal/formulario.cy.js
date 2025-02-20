@@ -21,7 +21,14 @@ and eu preencho o campo "Empresa" com "Narwal Sistemas"
 and eu seleciono no campo "Qual segmento" com a opção "3"
 Then eu não devo submeter o formulario (evitando enviar informações, sempre enviar para testes)
 and o formulário deve permanecer na página
+
+Não realizei o envio para não estar enviando formularios mas num ambiente interno de teste estaria realizando normalmente
+Scenario: Enviar o formulário com sucesso
+Given o usuário está na página do formulário de contato
+When o usuário clica no botão "Enviar" com os campos obrigatórios preenchidos
+Then o sistema deve exibir mensagens de sucesso
 */
+
 describe('Teste de preenchimento do formulário para contato', () => {
     it('Preencher o formulário de contato sem enviar', () => {
         cy.visit('https://www.narwalsistemas.com.br/')
