@@ -61,6 +61,13 @@ Given o usuário está na página do formulário de contato
 When o usuário clica no botão "Enviar" com os campos obrigatórios preenchidos
 Then o sistema deve exibir mensagens de sucesso
 
+Scenario: Preencher o email com um email invalido
+Given o usuário está na página do formulário de contato
+When o usuário preenche todos os campos com as informações anteriores
+and o usuário preenche o "Email" com "teste@teste"
+and o usuario clica no botão "Enviar" 
+Then o sistema deve acusar erro no campo "Email"
+
 ## Requisitos
 
 - Node.js
