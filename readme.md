@@ -2,7 +2,7 @@
 
 ## Descrição
 
-- Teste Back-End
+- Teste Front-end
 
 Este é um projeto simples que contém dois testes automatizados realizados no site da Narwal Sistemas, utilizando o Cypress:
 
