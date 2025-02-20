@@ -8,11 +8,11 @@ Este é um projeto simples que contém dois testes automatizados realizados no s
 
 - Teste 1: Acessando o site e navegando pelo cabeçalho.
 
-<p>Feature: Navegando pela página principal
+Feature: Navegando pela página principal
 Scenario: Realizar acesso em todos os itens do cabeçalho
-Given que acessei a página principal do site "Narwal Sistemas"</p>
+Given que acessei a página principal do site "Narwal Sistemas"
 
-<p>When eu clico no item "Clientes" no cabeçalho
+When eu clico no item "Clientes" no cabeçalho
 Then eu devo acessar a página do site Narwal "/clientes"
 
 When eu clico no item "Soluções" no cabeçalho
@@ -30,7 +30,7 @@ When eu clico no item "Becomex" no cabeçalho
 Then eu devo acessar a página do site Narwal "/becomex"
 
 When eu clico no item "Blog" no cabeçalho
-Then eu devo acessar a página do site Narwal "/blog"</p>
+Then eu devo acessar a página do site Narwal "/blog"
   
 - Teste 2: Acessando o formulário de contato e preenchendo os campos.
 
