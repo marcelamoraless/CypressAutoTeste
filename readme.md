@@ -8,6 +8,29 @@ Este é um projeto simples que contém dois testes automatizados realizados no s
 
 - Teste 1: Acessando o site e navegando pelo cabeçalho.
 
+Feature: Navegando pela página principal
+Scenario: Realizar acesso em todos os itens do cabeçalho
+Dado que acessei a página principal do site "Narwal Sistemas"
+
+Quando eu clico no item "Clientes" no cabeçalho
+Então eu devo acessar a página do site Narwal "/clientes"
+
+Quando eu clico no item "Soluções" no cabeçalho
+Então eu devo acessar a página do site Narwal "/solucoes"
+
+Quando eu clico eu passo o mouse sob o item "Módulos" no cabeçalho
+Então o submenu deve ser exibido
+Quando eu clico no item "Trading" do submenu
+Então eu devo acessar a página do site Narwal "/trading"
+
+Quando eu clico no item "Inteligência Artificial" no cabeçalho
+Então eu devo acessar a página do site Narwal "/inteligenciaartificial"
+
+Quando eu clico no item "Becomex" no cabeçalho
+Então eu devo acessar a página do site Narwal "/becomex"
+
+Quando eu clico no item "Blog" no cabeçalho
+Então eu devo acessar a página do site Narwal "/blog"
   
 - Teste 2: Acessando o formulário de contato e preenchendo os campos.
 
