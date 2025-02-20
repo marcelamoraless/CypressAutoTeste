@@ -16,6 +16,10 @@ Este é um projeto simples que contém dois testes automatizados realizados no s
 
 - Rodar 'npx Cypress run'
 
+## Porque ter escolhido o Cypress?
+
+Eu escolhi o framework Cypress pois é o framework que possuo mais facilidade e conhecimento, além de ser um framework muito popular e recomendado para automações de testes. 
+
 ## Contato
 
 - Caso necessite de ajudar, entrar em contato com Marcela Morales
