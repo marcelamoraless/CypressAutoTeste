@@ -1,21 +1,26 @@
 /// <reference types="Cypress"/>
 
 /*
-Feature: Teste de preenchimento do formulário para contato
+Feature: Teste do formulario
+
+Scenario: Acessar o formulário de contato com sucesso
+Given o usuário está na página inicial do site
+When o usuário clica no link "Contato" no menu
+Then o sistema deve exibir o formulário de contato
+
 Scenario: Preencher o formulário de contato sem enviar
-Dado que acessei a página principal do site "Narwal Sistemas"
+Given que acessei a página principal do site "Narwal Sistemas"
+When eu clico no botão "Solicite uma demonstração"
+Then eu devo acessar a página do site Narwal "/contato"
 
-Quando eu clico no botão "Solicite uma demonstração"
-Então eu devo acessar a página do site Narwal "/contato"
-
-Quando eu preencho o campo "Nome" com "Marcela Morales"
-Quando eu preencho o campo "Email" com "marceladefranceschi@gmail.com"
-Quando eu preencho o campo "Cargo" com "Analista de teste"
-Quando eu preencho o campo "Telefone" com "(48)991854484"
-Quando eu preencho o campo "Empresa" com "Narwal Sistemas"
-Quando eu seleciono no campo "Qual segmento" com a opção "3"
-Então eu não devo submeter o formulario (evitando enviar informações, sempre enviar para testes)
-Então o formulário deve permanecer na página
+When eu preencho o campo "Nome" com "Marcela Morales"
+and eu preencho o campo "Email" com "marceladefranceschi@gmail.com"
+and eu preencho o campo "Cargo" com "Analista de teste"
+and eu preencho o campo "Telefone" com "(48)991854484"
+and eu preencho o campo "Empresa" com "Narwal Sistemas"
+and eu seleciono no campo "Qual segmento" com a opção "3"
+Then eu não devo submeter o formulario (evitando enviar informações, sempre enviar para testes)
+and o formulário deve permanecer na página
 */
 describe('Teste de preenchimento do formulário para contato', () => {
     it('Preencher o formulário de contato sem enviar', () => {
